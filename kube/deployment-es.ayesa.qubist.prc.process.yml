@@ -1,0 +1,65 @@
+# ... Deployment YAML definition
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ayesa
+  namespace: prc-nm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ayesa
+  template:
+    metadata:
+      labels:
+        app: ayesa
+    spec:
+      containers:
+        - env:
+          - name: POSTGRES_URL
+            valueFrom:
+              secretKeyRef:
+                name: ayesa-secrets
+                key: spring.datasource.url
+          - name: POSTGRES_USER
+            valueFrom:
+              secretKeyRef:
+                name: ayesa-secrets
+                key: spring.datasource.username
+          - name: POSTGRES_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: ayesa-secrets
+                key: spring.datasource.password
+    spec:
+      nodeName: v06-k8smaster-main
+      containers:
+        - name: app
+          image: israelservinmachette/ayesa-process:1.0.1
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Always
+
+          
+---
+# ... Service YAML definition
+apiVersion: v1
+kind: Service
+metadata:
+  name: ayesa
+  namespace: prc-nm
+spec:
+  ports:
+    - protocol: TCP
+      port: 8050
+      targetPort: 8080
+  selector:
+    app: ayesa
+  type: LoadBalancer
+  externalIPs:
+    - 95.179.189.132
+  sessionAffinity: None
+  loadBalancerIP: 95.179.189.132
+  externalTrafficPolicy: Cluster
+status:
+  loadBalancer: {}

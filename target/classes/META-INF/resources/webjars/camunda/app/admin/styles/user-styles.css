@@ -1,0 +1,86 @@
+[cam-widget-header] {
+  background-color: black !important;
+  border-top-color: black !important;
+}
+
+[cam-widget-header] .navbar-header {
+  padding: 0 !important;
+  margin-left: 20px;
+  text-indent: -999em;
+}
+
+[cam-widget-header] .brand-logo.ng-binding {
+  width: 80px;
+  height: 100%;
+  background-image: url(../assets/images/logo-header.svg);
+  background-repeat: no-repeat;
+}
+
+[cam-widget-header] span svg {
+  display: none !important;
+}
+
+[cam-widget-header] .dropdown-toggle {
+  color: #fff !important;
+}
+
+[cam-widget-header] .account span.glyphicon {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+[cam-widget-header] .app-switch a.dropdown-toggle {
+  padding-left: 0;
+}
+
+[cam-widget-header] .app-switch span.glyphicon.glyphicon-home {
+  display: none !important;
+}
+
+[ng-controller='NavigationController'] li a {
+  color: #fff;
+  margin: 0 2rem;
+}
+
+[ng-controller='NavigationController'] li a:hover {
+  color: #545454;
+}
+
+.login-header {
+  margin: 25px 0 !important;
+}
+
+.login-header:before {
+  display: block;
+  content: ' ';
+  background-image: url(../assets/images/logo-login.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.form-signin .btn {
+  background-color: #191920;
+  border-color: #191920;
+}
+
+.form-signin .btn[disabled='disabled'] {
+  background-color: #191920;
+  border-color: #191920;
+}
+
+.form-signin .btn:focus:active:focus {
+  background-color: #191920;
+  border-color: #191920;
+}
+
+.form-signin .btn:active:hover {
+  background-color: #191920;
+  border-color: #191920;
+}
+
+[cam-widget-footer] {
+  display: none;
+}

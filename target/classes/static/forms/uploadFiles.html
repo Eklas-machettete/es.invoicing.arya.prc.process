@@ -1,0 +1,129 @@
+<style>
+  hr {
+       display: block;
+       position: relative;
+       padding: 0;
+       margin: 8px auto;
+       height: 0;
+       width: 100%;
+       max-height: 0;
+       font-size: 1px;
+       line-height: 0;
+       clear: both;
+       border: none;
+       border-top: 1px solid #aaaaaa;
+</style>
+<form name="test" xmlns="http://www.w3.org/1999/html">
+  <div class="form-group">
+    <label class="control-label">Carga de facturas</label>
+    <table class="table">
+      <tbody>
+      <tr ng-repeat="file in files">
+        <td>
+          <a role="button" ng-click="openDocument(file)">{{file.name}}</a>
+        </td>
+        <td>
+          <span class="glyphicon glyphicon-remove" ng-click="removeDocument(file)" style="cursor:pointer"></span>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <div>
+      <label class="btn btn-default btn-file">
+        Seleccionar Archivos <input type="file" id="fileUpload" style="display: none;" onchange="angular.element(this).scope().upload(this)" multiple>
+        <span class="glyphicon glyphicon-folder-open"/>
+      </label>
+    </div>
+   </div>
+   <hr></hr>
+    
+  <script cam-script type="text/form-script">
+    inject([ '$scope', function($scope) {
+   
+    $scope.files = [];
+
+      $scope.upload = function(fileUpload) {
+        for (let i = 0; i < fileUpload.files.length; i++) {
+          let file = { name: fileUpload.files[i].name, mimetype: fileUpload.files[i].type, data: undefined, blob: undefined };
+          $scope.files.push(file);
+          $scope.retrieveFiledata(fileUpload.files[i], file);
+        }
+        $scope.test.$setDirty();
+        $scope.$apply();
+      };
+
+      $scope.retrieveFiledata = function (file, fileData) {
+        let reader = new FileReader();
+        reader.onload = function (event) {
+          fileData.blob = reader.result;
+          let binary = '';
+          let bytes = new Uint8Array(reader.result);
+          for (let i = 0; i < bytes.length; i++) {
+            binary += String.fromCharCode(bytes[i]);
+          }
+          fileData.data = btoa(binary);
+        };
+        reader.readAsArrayBuffer(file);
+      };
+
+      $scope.removeDocument = function (file) {
+        $scope.files.splice($scope.files.indexOf(file), 1);
+      };
+
+      $scope.openDocument = function (file) {
+        if (window.navigator.msSaveOrOpenBlob) {
+          if (file.href) {
+            $http.get(file.href, {responseType: 'arraybuffer'}).then(
+              function successCallback(response) {
+                window.navigator.msSaveOrOpenBlob(new Blob([response.data], {type: file.mimetype}), file.name);
+              },
+              function errorCallback(response) {
+                console.log('error downloading document: ' + response);
+              }
+            );
+          }
+          else {
+            window.navigator.msSaveOrOpenBlob(new Blob([file.blob], {type: file.mimetype}), file.name);
+          }
+        } else {
+          window.open('data:' + file.mimetype + ';base64,' + file.data);
+        }
+      };
+
+
+      camForm.on('form-loaded', function() {
+      });
+
+      camForm.on('variables-fetched', function() {
+      });
+
+      camForm.on('variables-restored', function() {
+      });
+
+      camForm.on('submit', function() {
+
+
+        $scope.files.forEach(function (file, index) {
+          camForm.variableManager.createVariable({
+            name: 'DOCUMENT_' + index,
+            type: 'Bytes',
+            value: file.data
+          });
+		  camForm.variableManager.createVariable({
+            name: 'NAME_' + index,
+            type: 'String',
+            value: file.name
+          });
+        });
+		camForm.variableManager.createVariable({
+            name: 'INDEX',
+            type: 'Integer',
+            value: $scope.files.length
+        });
+
+      });
+
+    }]);
+
+   </script>
+</form>

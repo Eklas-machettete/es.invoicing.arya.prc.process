@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1yuafb0" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.4.0">
+  <bpmn:collaboration id="Collaboration_0ne2uuj">
+    <bpmn:participant id="startGeneral" name="Facturación" processRef="Process_11xbxdk" />
+    <bpmn:participant id="startValidations" processRef="startValidation" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_11xbxdk" name="Facturación" isExecutable="true" camunda:versionTag="1.0">
+    <bpmn:laneSet id="LaneSet_1cvo5pp">
+      <bpmn:lane id="Lane_0grjkg5" name="Consumer">
+        <bpmn:flowNodeRef>Activity_1tr0etc</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1awirth</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_1yc1han</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_01mcg2r</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:userTask id="Activity_1tr0etc" name="1. Upload files" camunda:formKey="embedded:app:forms/uploadFiles.html" camunda:assignee="${starter}">
+      <bpmn:incoming>Flow_1mls9n3</bpmn:incoming>
+      <bpmn:outgoing>Flow_13jdd77</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Activity_1awirth" name="Process files" camunda:delegateExpression="#{driveDelegate}">
+      <bpmn:incoming>Flow_13jdd77</bpmn:incoming>
+      <bpmn:outgoing>Flow_0zx9mb2</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_13jdd77" sourceRef="Activity_1tr0etc" targetRef="Activity_1awirth" />
+    <bpmn:sequenceFlow id="Flow_1mls9n3" sourceRef="Event_1yc1han" targetRef="Activity_1tr0etc" />
+    <bpmn:startEvent id="Event_1yc1han" camunda:initiator="starter">
+      <bpmn:outgoing>Flow_1mls9n3</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_01mcg2r">
+      <bpmn:incoming>Flow_0zx9mb2</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0zx9mb2" sourceRef="Activity_1awirth" targetRef="Event_01mcg2r" />
+    <bpmn:textAnnotation id="TextAnnotation_05q9siu">
+      <bpmn:text>Post files to OCR services</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_0o64kvc" sourceRef="Activity_1awirth" targetRef="TextAnnotation_05q9siu" />
+  </bpmn:process>
+  <bpmn:message id="Message_114xe53" />
+  <bpmn:process id="startValidation" name="Validacion" isExecutable="true" camunda:versionTag="1.0">
+    <bpmn:sequenceFlow id="Flow_12zbng2" sourceRef="Event_0kakjcg" targetRef="Activity_1va3fab" />
+    <bpmn:startEvent id="Event_0kakjcg" camunda:initiator="starter">
+      <bpmn:outgoing>Flow_12zbng2</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Activity_1va3fab" name="Validacion ${name}" camunda:formKey="embedded:app:forms/uploadFiles.html" camunda:assignee="${starter}">
+      <bpmn:incoming>Flow_12zbng2</bpmn:incoming>
+      <bpmn:outgoing>Flow_1r7yoka</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="Event_1r1bgho">
+      <bpmn:incoming>Flow_1r7yoka</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1r7yoka" sourceRef="Activity_1va3fab" targetRef="Event_1r1bgho" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0ne2uuj">
+      <bpmndi:BPMNShape id="Participant_02igcyu_di" bpmnElement="startGeneral" isHorizontal="true">
+        <dc:Bounds x="154" y="80" width="1776" height="270" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0grjkg5_di" bpmnElement="Lane_0grjkg5" isHorizontal="true">
+        <dc:Bounds x="184" y="80" width="1746" height="270" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0zx9mb2_di" bpmnElement="Flow_0zx9mb2">
+        <di:waypoint x="735" y="240" />
+        <di:waypoint x="782" y="240" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1mls9n3_di" bpmnElement="Flow_1mls9n3">
+        <di:waypoint x="298" y="240" />
+        <di:waypoint x="495" y="240" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_13jdd77_di" bpmnElement="Flow_13jdd77">
+        <di:waypoint x="595" y="240" />
+        <di:waypoint x="635" y="240" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Activity_0xtclfo_di" bpmnElement="Activity_1tr0etc">
+        <dc:Bounds x="495" y="200" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1is759h_di" bpmnElement="Activity_1awirth">
+        <dc:Bounds x="635" y="200" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0g92smq_di" bpmnElement="Event_1yc1han">
+        <dc:Bounds x="262" y="222" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_01mcg2r_di" bpmnElement="Event_01mcg2r">
+        <dc:Bounds x="782" y="222" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_05q9siu_di" bpmnElement="TextAnnotation_05q9siu">
+        <dc:Bounds x="700" y="140" width="140" height="35" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_0o64kvc_di" bpmnElement="Association_0o64kvc">
+        <di:waypoint x="728" y="201" />
+        <di:waypoint x="753" y="175" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Participant_1dxccmr_di" bpmnElement="startValidations" isHorizontal="true">
+        <dc:Bounds x="154" y="430" width="774" height="250" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1r7yoka_di" bpmnElement="Flow_1r7yoka">
+        <di:waypoint x="610" y="550" />
+        <di:waypoint x="792" y="550" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_12zbng2_di" bpmnElement="Flow_12zbng2">
+        <di:waypoint x="328" y="550" />
+        <di:waypoint x="510" y="550" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Event_0kakjcg_di" bpmnElement="Event_0kakjcg">
+        <dc:Bounds x="292" y="532" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0xs6hh5_di" bpmnElement="Activity_1va3fab">
+        <dc:Bounds x="510" y="510" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1r1bgho_di" bpmnElement="Event_1r1bgho">
+        <dc:Bounds x="792" y="532" width="36" height="36" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
