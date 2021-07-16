@@ -41,17 +41,8 @@ public class InvoicingController {
 	    		json += "||"+File.getNombre()+"||"+File.getEncode();
 	    	}*/
 	        //System.out.println("RFile_list: "+json);
-	    	Invoice invoice = new Invoice();
-	    	invoice = invoices.getInvoices().get(0);
-	    	runtimeService.createProcessInstanceByKey("startValidation")
-            .businessKey("startValidation")
-            .setVariable("starter", invoices.getOwner())
-            .setVariable("name", invoice.getFileName().substring(invoice.getFileName().indexOf("-"), invoice.getFileName().length()))
-            .execute();
-	    	
-		    
-	    	LOG.log(Level.INFO, ResponseEntity.ok().build());
-			return ResponseEntity.ok().build();
+	    	return  startProcess(invoices);
+
 	    }
 
 }

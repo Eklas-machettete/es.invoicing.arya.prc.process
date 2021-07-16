@@ -43,11 +43,11 @@ import com.invoicing.model.Files;
 public class DriveDelegate implements JavaDelegate {
 
 
-  @Value("${ocr.url}")
-  private String url;
+ // @Value("${ocr.url}")
+  private String url="http://localhost:8084/ocr/v1.0/files";
   
-  @Value("${callback.url}")
-  private String callback;
+  //@Value("${callback.url}")
+  private String callback="http://localhost:8080/invoicing/v1.0/invoicesProcessed";
 	  
   private static final Logger LOGGER = LoggerFactory.getLogger(DriveDelegate.class);
     
