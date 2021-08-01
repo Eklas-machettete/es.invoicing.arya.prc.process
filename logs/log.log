@@ -2177,3 +2177,332 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
+01-08-2021 13:06:07.752 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.1.5.Final
+01-08-2021 13:06:09.160 [main] INFO  com.invoicing.InvoicingApplication.logStarting - Starting InvoicingApplication on DESKTOP-HL3O1PJ with PID 3220 (E:\she\Arya_28_Jun\arya_prc\es.invoicing.arya.prc.process\target\classes started by eklas in E:\she\Arya_28_Jun\arya_prc\es.invoicing.arya.prc.process)
+01-08-2021 13:06:09.162 [main] INFO  com.invoicing.InvoicingApplication.logStartupProfileInfo - The following profiles are active: dev
+01-08-2021 13:06:20.107 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+01-08-2021 13:06:20.161 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 30ms. Found 0 JPA repository interfaces.
+01-08-2021 13:06:21.033 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a109b11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01-08-2021 13:06:21.151 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+01-08-2021 13:06:21.814 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+01-08-2021 13:06:21.826 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+01-08-2021 13:06:21.827 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+01-08-2021 13:06:21.828 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.38]
+01-08-2021 13:06:22.198 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+01-08-2021 13:06:22.198 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 12528 ms
+01-08-2021 13:06:22.820 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+01-08-2021 13:06:23.185 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+01-08-2021 13:06:23.195 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+01-08-2021 13:06:23.807 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+01-08-2021 13:06:24.031 [task-1] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+01-08-2021 13:06:24.212 [task-1] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.21.Final
+01-08-2021 13:06:24.306 [main] INFO  org.camunda.bpm.spring.boot.logInfo - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+01-08-2021 13:06:24.308 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'camundaTaskExecutor'
+01-08-2021 13:06:24.484 [main] INFO  org.camunda.bpm.engine.cfg.logInfo - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJpaConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, failedJobConfiguration, com.invoicing.plugin.BpmRunLdapPlugin@78eafad, AdministratorAuthorizationPlugin, disableDeploymentResourcePattern, eventPublisherPlugin]' activated on process engine 'default'
+01-08-2021 13:06:24.494 [main] INFO  org.camunda.bpm.identity.impl.ldap.logInfo - LDAP-00001 PLUGIN BpmRunLdapPlugin activated on process engine default
+01-08-2021 13:06:24.495 [main] INFO  org.camunda.bpm.spring.boot.logInfo - STARTER-SB020 ProcessApplication enabled: autoDeployment via springConfiguration#deploymentResourcePattern is disabled
+01-08-2021 13:06:24.513 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+01-08-2021 13:06:24.514 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-003: Task events will be published as Spring Events.
+01-08-2021 13:06:24.514 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-005: Execution events will be published as Spring Events.
+01-08-2021 13:06:24.518 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-007: History events will be published as Spring events.
+01-08-2021 13:06:25.004 [task-1] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+01-08-2021 13:06:25.441 [main] INFO  org.camunda.feel.FeelEngine.<init> - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@62360a68)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@71668a67, clock: SystemClock, configuration: Configuration(false)]
+01-08-2021 13:06:25.577 [task-1] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+01-08-2021 13:06:26.288 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01-08-2021 13:06:26.304 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01-08-2021 13:06:34.155 [main] INFO  org.camunda.bpm.connect.logInfo - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+01-08-2021 13:06:34.159 [main] INFO  org.camunda.bpm.connect.logInfo - CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+01-08-2021 13:06:35.615 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+01-08-2021 13:06:35.769 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+01-08-2021 13:06:35.790 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+01-08-2021 13:06:35.818 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+01-08-2021 13:06:35.844 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+01-08-2021 13:06:35.871 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+01-08-2021 13:06:35.899 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+01-08-2021 13:06:36.087 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03067 No history level property found in database
+01-08-2021 13:06:36.087 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+01-08-2021 13:06:36.753 [main] INFO  org.camunda.bpm.engine.logInfo - ENGINE-00001 Process Engine default created.
+01-08-2021 13:06:39.332 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration.lazyInit - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@44bbb7c6
+01-08-2021 13:06:39.334 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration.lazyInit - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@49190ed6
+01-08-2021 13:06:40.009 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+01-08-2021 13:06:40.075 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+01-08-2021 13:06:40.217 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+01-08-2021 13:06:40.221 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener.onApplicationEvent - Triggering deferred initialization of Spring Data repositories…
+01-08-2021 13:06:40.225 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener.onApplicationEvent - Spring Data repositories initialized!
+01-08-2021 13:06:40.298 [main] INFO  org.camunda.bpm.container.logInfo - ENGINE-08024 Found processes.xml file at file:/E:/she/Arya_28_Jun/arya_prc/es.invoicing.arya.prc.process/target/classes/META-INF/processes.xml
+01-08-2021 13:06:40.427 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01-08-2021 13:06:40.427 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+01-08-2021 13:06:40.439 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 12 ms
+01-08-2021 13:06:40.483 [main] INFO  org.camunda.bpm.container.logInfo - ENGINE-08023 Deployment summary for process archive 'twitter-pa': 
+
+        4.3 OCR (TB)v1.0.bpmn
+
+01-08-2021 13:06:40.692 [http-nio-8080-exec-2] WARN  o.a.c.util.SessionIdGeneratorBase.log - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [122] milliseconds.
+01-08-2021 13:06:40.784 [main] INFO  org.camunda.bpm.application.logInfo - ENGINE-07021 ProcessApplication 'invoicingApplication' registered for DB deployments [0531df72-f297-11eb-9bde-68f728010cd2]. Will execute process definitions 
+
+        Process_11xbxdk[version: 1, id: Process_11xbxdk:1:054a7084-f297-11eb-9bde-68f728010cd2]
+        startValidation[version: 1, id: startValidation:1:054b81f5-f297-11eb-9bde-68f728010cd2]
+Deployment does not provide any case definitions.
+01-08-2021 13:06:40.826 [main] INFO  org.camunda.bpm.container.logInfo - ENGINE-08050 Process application invoicingApplication successfully deployed
+01-08-2021 13:06:40.842 [main] INFO  com.invoicing.InvoicingApplication.logStarted - Started InvoicingApplication in 39.356 seconds (JVM running for 48.583)
+01-08-2021 13:06:40.880 [main] INFO  org.camunda.bpm.engine.jobexecutor.logInfo - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+01-08-2021 13:06:40.885 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor.logInfo - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+                                                                                                                                                                                                                                                                                                                                                                                                         01-08-2021 13:33:19.736 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.1.5.Final
+01-08-2021 13:33:20.621 [main] INFO  com.invoicing.InvoicingApplication.logStarting - Starting InvoicingApplication on DESKTOP-HL3O1PJ with PID 12060 (E:\she\Arya_28_Jun\arya_prc\es.invoicing.arya.prc.process\target\classes started by eklas in E:\she\Arya_28_Jun\arya_prc\es.invoicing.arya.prc.process)
+01-08-2021 13:33:20.623 [main] INFO  com.invoicing.InvoicingApplication.logStartupProfileInfo - The following profiles are active: dev
+01-08-2021 13:33:34.872 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+01-08-2021 13:33:35.344 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 215ms. Found 0 JPA repository interfaces.
+01-08-2021 13:33:39.873 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cd5bcd95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01-08-2021 13:33:40.337 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+01-08-2021 13:33:45.104 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+01-08-2021 13:33:45.235 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+01-08-2021 13:33:45.236 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+01-08-2021 13:33:45.236 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.38]
+01-08-2021 13:33:46.583 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+01-08-2021 13:33:46.583 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 25593 ms
+01-08-2021 13:33:48.890 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+01-08-2021 13:33:52.380 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+01-08-2021 13:33:52.400 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+01-08-2021 13:33:54.217 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+01-08-2021 13:33:55.647 [task-1] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+01-08-2021 13:33:55.952 [main] INFO  org.camunda.bpm.spring.boot.logInfo - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+01-08-2021 13:33:55.953 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'camundaTaskExecutor'
+01-08-2021 13:33:57.784 [main] INFO  org.camunda.bpm.engine.cfg.logInfo - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJpaConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, failedJobConfiguration, com.invoicing.plugin.BpmRunLdapPlugin@25fa6889, AdministratorAuthorizationPlugin, disableDeploymentResourcePattern, eventPublisherPlugin]' activated on process engine 'default'
+01-08-2021 13:33:57.909 [main] INFO  org.camunda.bpm.identity.impl.ldap.logInfo - LDAP-00001 PLUGIN BpmRunLdapPlugin activated on process engine default
+01-08-2021 13:33:57.910 [main] INFO  org.camunda.bpm.spring.boot.logInfo - STARTER-SB020 ProcessApplication enabled: autoDeployment via springConfiguration#deploymentResourcePattern is disabled
+01-08-2021 13:33:57.979 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+01-08-2021 13:33:57.980 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-003: Task events will be published as Spring Events.
+01-08-2021 13:33:57.981 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-005: Execution events will be published as Spring Events.
+01-08-2021 13:33:57.988 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-007: History events will be published as Spring events.
+01-08-2021 13:34:00.165 [task-1] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.21.Final
+01-08-2021 13:34:05.900 [main] INFO  org.camunda.feel.FeelEngine.<init> - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@25823192)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@6774f264, clock: SystemClock, configuration: Configuration(false)]
+01-08-2021 13:34:09.002 [task-1] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+01-08-2021 13:34:11.030 [task-1] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+01-08-2021 13:34:14.324 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01-08-2021 13:34:14.340 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01-08-2021 13:34:34.885 [main] INFO  org.camunda.bpm.connect.logInfo - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+01-08-2021 13:34:35.009 [main] INFO  org.camunda.bpm.connect.logInfo - CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+01-08-2021 13:34:37.506 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+01-08-2021 13:34:37.589 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+01-08-2021 13:34:37.603 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+01-08-2021 13:34:37.639 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+01-08-2021 13:34:37.673 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+01-08-2021 13:34:37.681 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+01-08-2021 13:34:37.690 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+01-08-2021 13:34:37.853 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03067 No history level property found in database
+01-08-2021 13:34:37.855 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+01-08-2021 13:34:38.932 [main] INFO  org.camunda.bpm.engine.logInfo - ENGINE-00001 Process Engine default created.
+01-08-2021 13:34:42.673 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration.lazyInit - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@577f9dfd
+01-08-2021 13:34:42.675 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration.lazyInit - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@49d42faf
+01-08-2021 13:34:43.259 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+01-08-2021 13:34:43.441 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+01-08-2021 13:34:43.527 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+01-08-2021 13:34:43.529 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener.onApplicationEvent - Triggering deferred initialization of Spring Data repositories…
+01-08-2021 13:34:43.531 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener.onApplicationEvent - Spring Data repositories initialized!
+01-08-2021 13:34:43.592 [main] INFO  org.camunda.bpm.container.logInfo - ENGINE-08024 Found processes.xml file at file:/E:/she/Arya_28_Jun/arya_prc/es.invoicing.arya.prc.process/target/classes/META-INF/processes.xml
+01-08-2021 13:34:43.806 [main] INFO  org.camunda.bpm.container.logInfo - ENGINE-08023 Deployment summary for process archive 'twitter-pa': 
+
+        4.3 OCR (TB)v1.0.bpmn
+
+01-08-2021 13:34:44.388 [main] INFO  org.camunda.bpm.application.logInfo - ENGINE-07021 ProcessApplication 'invoicingApplication' registered for DB deployments [f0a3bd0b-f29a-11eb-83f0-68f728010cd2]. Will execute process definitions 
+
+        Process_11xbxdk[version: 1, id: Process_11xbxdk:1:f0cb694d-f29a-11eb-83f0-68f728010cd2]
+        startValidation[version: 1, id: startValidation:1:f0cc058e-f29a-11eb-83f0-68f728010cd2]
+Deployment does not provide any case definitions.
+01-08-2021 13:34:44.425 [main] INFO  org.camunda.bpm.container.logInfo - ENGINE-08050 Process application invoicingApplication successfully deployed
+01-08-2021 13:34:44.432 [main] INFO  com.invoicing.InvoicingApplication.logStarted - Started InvoicingApplication in 87.619 seconds (JVM running for 91.299)
+01-08-2021 13:34:44.507 [main] INFO  org.camunda.bpm.engine.jobexecutor.logInfo - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+01-08-2021 13:34:44.512 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor.logInfo - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+01-08-2021 13:34:51.778 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01-08-2021 13:34:51.779 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+01-08-2021 13:34:51.788 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 9 ms
+01-08-2021 13:37:14.959 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+01-08-2021 13:37:14.971 [RMI TCP Connection(13)-127.0.0.1] INFO  org.camunda.bpm.container.logInfo - ENGINE-08051 Process application invoicingApplication undeployed
+01-08-2021 13:37:15.092 [RMI TCP Connection(13)-127.0.0.1] INFO  org.camunda.bpm.engine.jobexecutor.logInfo - ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+01-08-2021 13:37:15.092 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor.logInfo - ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+01-08-2021 13:37:15.102 [RMI TCP Connection(13)-127.0.0.1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 90121, SQLState: 90121
+01-08-2021 13:37:15.103 [RMI TCP Connection(13)-127.0.0.1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+01-08-2021 13:37:15.111 [RMI TCP Connection(13)-127.0.0.1] ERROR o.s.o.jpa.EntityManagerFactoryUtils.closeEntityManager - Failed to release JPA EntityManager
+org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:48)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:213)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.close(LogicalConnectionManagedImpl.java:258)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.close(JdbcCoordinatorImpl.java:175)
+	at org.hibernate.internal.AbstractSharedSessionContract.close(AbstractSharedSessionContract.java:342)
+	at org.hibernate.internal.SessionImpl.closeWithoutOpenChecks(SessionImpl.java:377)
+	at org.hibernate.internal.SessionImpl.close(SessionImpl.java:362)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.closeEntityManager(EntityManagerFactoryUtils.java:427)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCleanupAfterCompletion(JpaTransactionManager.java:622)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.cleanupAfterCompletion(AbstractPlatformTransactionManager.java:1004)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:790)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:152)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:44)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.CommandCounterInterceptor.execute(CommandCounterInterceptor.java:35)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:33)
+	at org.camunda.bpm.engine.impl.ProcessEngineImpl.close(ProcessEngineImpl.java:185)
+	at org.camunda.bpm.engine.spring.ProcessEngineFactoryBean.destroy(ProcessEngineFactoryBean.java:42)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1514)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1490)
+	at org.h2.jdbc.JdbcConnection.setAutoCommit(JdbcConnection.java:495)
+	at com.zaxxer.hikari.pool.PoolBase.resetConnectionState(PoolBase.java:219)
+	at com.zaxxer.hikari.pool.PoolEntry.resetConnectionState(PoolEntry.java:102)
+	at com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:263)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.closeConnection(DatasourceConnectionProviderImpl.java:127)
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.releaseConnection(NonContextualJdbcConnectionAccess.java:49)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:210)
+	... 68 common frames omitted
+01-08-2021 13:37:15.118 [RMI TCP Connection(13)-127.0.0.1] INFO  org.camunda.bpm.engine.logInfo - ENGINE-00007 Process Engine default closed
+01-08-2021 13:37:15.119 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'camundaTaskExecutor'
+01-08-2021 13:37:15.119 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+01-08-2021 13:37:15.122 [RMI TCP Connection(13)-127.0.0.1] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl.perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+01-08-2021 13:37:15.126 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+01-08-2021 13:37:15.127 [RMI TCP Connection(13)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+01-08-2021 13:37:15.130 [RMI TCP Connection(13)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+01-08-2021 14:15:45.611 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.1.5.Final
+01-08-2021 14:15:45.713 [main] INFO  com.invoicing.InvoicingApplication.logStarting - Starting InvoicingApplication on DESKTOP-HL3O1PJ with PID 9576 (E:\she\Arya_28_Jun\arya_prc\es.invoicing.arya.prc.process\target\classes started by eklas in E:\she\Arya_28_Jun\arya_prc\es.invoicing.arya.prc.process)
+01-08-2021 14:15:45.714 [main] INFO  com.invoicing.InvoicingApplication.logStartupProfileInfo - The following profiles are active: dev
+01-08-2021 14:15:47.060 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+01-08-2021 14:15:47.099 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 30ms. Found 0 JPA repository interfaces.
+01-08-2021 14:15:47.440 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9cd1623f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01-08-2021 14:15:47.483 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+01-08-2021 14:15:47.899 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+01-08-2021 14:15:47.910 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+01-08-2021 14:15:47.911 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+01-08-2021 14:15:47.911 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.38]
+01-08-2021 14:15:48.232 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+01-08-2021 14:15:48.233 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2448 ms
+01-08-2021 14:15:48.475 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+01-08-2021 14:15:48.705 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+01-08-2021 14:15:48.715 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+01-08-2021 14:15:48.944 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+01-08-2021 14:15:49.019 [task-1] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+01-08-2021 14:15:49.122 [task-1] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.21.Final
+01-08-2021 14:15:49.164 [main] INFO  org.camunda.bpm.spring.boot.logInfo - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+01-08-2021 14:15:49.165 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'camundaTaskExecutor'
+01-08-2021 14:15:49.259 [main] INFO  org.camunda.bpm.engine.cfg.logInfo - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJpaConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, failedJobConfiguration, com.invoicing.plugin.BpmRunLdapPlugin@4a4b288a, AdministratorAuthorizationPlugin, disableDeploymentResourcePattern, eventPublisherPlugin]' activated on process engine 'default'
+01-08-2021 14:15:49.266 [main] INFO  org.camunda.bpm.identity.impl.ldap.logInfo - LDAP-00001 PLUGIN BpmRunLdapPlugin activated on process engine default
+01-08-2021 14:15:49.268 [main] INFO  org.camunda.bpm.spring.boot.logInfo - STARTER-SB020 ProcessApplication enabled: autoDeployment via springConfiguration#deploymentResourcePattern is disabled
+01-08-2021 14:15:49.270 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+01-08-2021 14:15:49.271 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-003: Task events will be published as Spring Events.
+01-08-2021 14:15:49.271 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-005: Execution events will be published as Spring Events.
+01-08-2021 14:15:49.276 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin.preInit - EVENTING-007: History events will be published as Spring events.
+01-08-2021 14:15:49.378 [task-1] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+01-08-2021 14:15:49.613 [task-1] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+01-08-2021 14:15:49.631 [main] INFO  org.camunda.feel.FeelEngine.<init> - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@5dce5c03)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@2fafa7b5, clock: SystemClock, configuration: Configuration(false)]
+01-08-2021 14:15:50.150 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01-08-2021 14:15:50.164 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01-08-2021 14:15:55.587 [main] INFO  org.camunda.bpm.connect.logInfo - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+01-08-2021 14:15:55.590 [main] INFO  org.camunda.bpm.connect.logInfo - CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+01-08-2021 14:15:55.847 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+01-08-2021 14:15:55.891 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+01-08-2021 14:15:55.904 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+01-08-2021 14:15:55.930 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+01-08-2021 14:15:55.939 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+01-08-2021 14:15:55.947 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+01-08-2021 14:15:55.959 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+01-08-2021 14:15:55.986 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03067 No history level property found in database
+01-08-2021 14:15:55.987 [main] INFO  org.camunda.bpm.engine.persistence.logInfo - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+01-08-2021 14:15:56.048 [main] INFO  org.camunda.bpm.engine.logInfo - ENGINE-00001 Process Engine default created.
+01-08-2021 14:15:56.582 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration.lazyInit - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@145e958f
+01-08-2021 14:15:56.649 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration.lazyInit - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@485deee1
+01-08-2021 14:15:56.989 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+01-08-2021 14:15:57.051 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+01-08-2021 14:15:57.088 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+01-08-2021 14:15:57.090 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener.onApplicationEvent - Triggering deferred initialization of Spring Data repositories…
+01-08-2021 14:15:57.091 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener.onApplicationEvent - Spring Data repositories initialized!
+01-08-2021 14:15:57.134 [main] INFO  org.camunda.bpm.container.logInfo - ENGINE-08024 Found processes.xml file at file:/E:/she/Arya_28_Jun/arya_prc/es.invoicing.arya.prc.process/target/classes/META-INF/processes.xml
+01-08-2021 14:15:57.284 [main] INFO  org.camunda.bpm.container.logInfo - ENGINE-08023 Deployment summary for process archive 'twitter-pa': 
+
+        4.3 OCR (TB)v1.0.bpmn
+
+01-08-2021 14:15:57.326 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01-08-2021 14:15:57.327 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+01-08-2021 14:15:57.340 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 12 ms
+01-08-2021 14:15:57.640 [main] INFO  org.camunda.bpm.application.logInfo - ENGINE-07021 ProcessApplication 'invoicingApplication' registered for DB deployments [b2cf2141-f2a0-11eb-847e-68f728010cd2]. Will execute process definitions 
+
+        Process_11xbxdk[version: 1, id: Process_11xbxdk:1:b2f9dac3-f2a0-11eb-847e-68f728010cd2]
+        startValidation[version: 1, id: startValidation:1:b2fa4ff4-f2a0-11eb-847e-68f728010cd2]
+Deployment does not provide any case definitions.
+01-08-2021 14:15:57.653 [main] INFO  org.camunda.bpm.container.logInfo - ENGINE-08050 Process application invoicingApplication successfully deployed
+01-08-2021 14:15:57.657 [main] INFO  com.invoicing.InvoicingApplication.logStarted - Started InvoicingApplication in 12.642 seconds (JVM running for 14.602)
+01-08-2021 14:15:57.682 [main] INFO  org.camunda.bpm.engine.jobexecutor.logInfo - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+01-08-2021 14:15:57.795 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor.logInfo - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+01-08-2021 14:27:15.624 [http-nio-8080-exec-4] INFO  com.invoicing.delegate.DriveDelegate.execute - Extrayendo libros de facturas: 1
+01-08-2021 14:27:15.625 [http-nio-8080-exec-4] INFO  com.invoicing.delegate.DriveDelegate.execute - file_name:license.txt
+01-08-2021 14:27:43.819 [http-nio-8080-exec-6] INFO  com.invoicing.delegate.DriveDelegate.execute - Extrayendo libros de facturas: 1
+01-08-2021 14:27:43.820 [http-nio-8080-exec-6] INFO  com.invoicing.delegate.DriveDelegate.execute - file_name:open-source-licenses.txt
+01-08-2021 14:32:18.161 [http-nio-8080-exec-9] INFO  com.invoicing.delegate.DriveDelegate.execute - Extrayendo libros de facturas: 1
+01-08-2021 14:32:18.162 [http-nio-8080-exec-9] INFO  com.invoicing.delegate.DriveDelegate.execute - file_name:eclipsec.exe
+01-08-2021 14:55:28.109 [RMI TCP Connection(48)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+01-08-2021 14:55:28.155 [RMI TCP Connection(48)-127.0.0.1] INFO  org.camunda.bpm.container.logInfo - ENGINE-08051 Process application invoicingApplication undeployed
+01-08-2021 14:55:28.259 [RMI TCP Connection(48)-127.0.0.1] INFO  org.camunda.bpm.engine.jobexecutor.logInfo - ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+01-08-2021 14:55:28.260 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor.logInfo - ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+01-08-2021 14:55:28.264 [RMI TCP Connection(48)-127.0.0.1] INFO  org.camunda.bpm.engine.logInfo - ENGINE-00007 Process Engine default closed
+01-08-2021 14:55:28.265 [RMI TCP Connection(48)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'camundaTaskExecutor'
+01-08-2021 14:55:28.266 [RMI TCP Connection(48)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+01-08-2021 14:55:28.267 [RMI TCP Connection(48)-127.0.0.1] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl.perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+01-08-2021 14:55:28.271 [RMI TCP Connection(48)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+01-08-2021 14:55:28.275 [RMI TCP Connection(48)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+01-08-2021 14:55:28.286 [RMI TCP Connection(48)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.

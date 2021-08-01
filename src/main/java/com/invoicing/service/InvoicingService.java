@@ -37,8 +37,6 @@ public class InvoicingService {
         .setVariable("starter", invoices.getOwner())
         .setVariable("name", invoice.getFileName().substring(invoice.getFileName().indexOf("-"), invoice.getFileName().length()))
         .execute();
-    	
-	    
     	LOG.log(Level.INFO, ResponseEntity.ok().build());
 		return ResponseEntity.ok().build();
 			

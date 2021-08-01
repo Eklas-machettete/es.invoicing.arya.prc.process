@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.invoicing.model.Invoice;
 import com.invoicing.model.Invoices;
+import com.invoicing.service.InvoicingService;
 
 import camundajar.impl.com.google.gson.Gson;
 
@@ -30,18 +31,14 @@ public class InvoicingController {
 		
 	  @Autowired
 	  private RuntimeService runtimeService;
+	  @Autowired
+	  private InvoicingService invoicingService;
 	  
 	    @PostMapping(path = "/invoicesProcessed", consumes = "application/json", produces = "application/json")
 		@ResponseBody
 		public ResponseEntity startProcess(@RequestBody Invoices invoices) throws InvalidKeyException, IOException {
 	
-	    	//runtimeService.startProcessInstanceByKey("startAuditoria");
-	    	/*String json = "";
-	    	for(RFile File: RFile_list) {
-	    		json += "||"+File.getNombre()+"||"+File.getEncode();
-	    	}*/
-	        //System.out.println("RFile_list: "+json);
-	    	return  startProcess(invoices);
+	    	return invoicingService.startProcess(invoices);
 
 	    }
 
